@@ -1,0 +1,31 @@
+
+
+ui-code ungefaehr bei 500op gerundet auf 1000op
+
+restlicher code bei 19000op 
+
+
+macht zusammen 20000op 
+
+1op fast immer 1takt
+
+
+also 
+
+
+20 000 000 / 20000takte
+
+1000khz sampel-rate fuer erkennen einer muenze macht fuer die tief und hochphase ein zeitplato von 1ms
+
+
+
+fragen:
+
+wie schnell kann das ding einsortieren muenzen pro sekunde (am besten nur gleich muenzen) und ueber einen zeitraum von ca. 1min messen (mit sehr vielen muenzen)
+
+
+sensor logik so designen das diese bei ca. 1khz schneidet (tiefpass) besser bei 250hz,
+da vermutlich die maschiene keine 1000 muenzen pro sekunde einsortiert kann woll eher 50 oder so
+
+
+mit interupts koennen wir auch mit wesentlich mehr sampeln, muessen aber auch eventuel "zeit"/counter mitfuehren damit wir muenzen nicht mehrfach zaehlen und/oder muessen wir triggern bei steigender flanke (mit fuehren von von PCINT7:0 da all PCI0 triggern)
